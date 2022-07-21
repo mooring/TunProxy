@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity implements
             case R.id.action_show_about:
                 new AlertDialog.Builder(this)
                     .setTitle(getString(R.string.app_name) + getVersionName())
-                    .setMessage(R.string.app_name)
+                    .setMessage("compiled by mooring")
                     .show();
                 break;
             default:
@@ -155,6 +155,7 @@ public class MainActivity extends AppCompatActivity implements
         super.onResume();
         start.setEnabled(false);
         stop.setEnabled(false);
+        stop.setVisibility(View.GONE);
         updateStatus();
 
         statusHandler.post(statusRunnable);
@@ -188,18 +189,24 @@ public class MainActivity extends AppCompatActivity implements
         }
         if (isRunning()) {
             start.setEnabled(false);
+            start.setVisibility(View.GONE);
             hostEditText.setEnabled(false);
             stop.setEnabled(true);
+            stop.setVisibility(View.VISIBLE);
         } else {
             start.setEnabled(true);
+            start.setVisibility(View.VISIBLE);
             hostEditText.setEnabled(true);
             stop.setEnabled(false);
+            stop.setVisibility(View.GONE);
         }
     }
 
     private void stopVpn() {
         start.setEnabled(true);
+        start.setVisibility(View.VISIBLE);
         stop.setEnabled(false);
+        stop.setVisibility(View.GONE);
         Tun2HttpVpnService.stop(this);
     }
 
