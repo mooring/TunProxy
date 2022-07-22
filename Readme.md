@@ -10,6 +10,8 @@ Only the communication from the specified application can be acquired.
 
 When you start the TunProxy application, the following screen will be launched.
 
+[Download](https://github.com/mooring/TunProxy/releases/download/v1.2.8/TunProxy_v1.2.8.apk) v1.2.8 here
+
 ![Tun Proxy](images/TunProxy.png)
 
 * Proxy address (ipv4:port)
@@ -29,7 +31,7 @@ Application settings can be made from the menu icon (![Menu](images/Menu.png)) a
 
 Configure VPN service settings.
 
-![Menu Settings](images/Menu-Settings.png) ⇒ ![Menu Settings](images/Menu-Settings-app.png)
+![Menu Settings](images/Menu-Settings.png)
 
 There are two modes, Disallowed Application and Allowed Application, but you can not specify them at the same time.
 Because of this you will have to choose whether you want to run in either mode.
@@ -108,7 +110,7 @@ Display application version
 
 * Android 5.0 (API Level 21) or later
 
-### ビルド
+### Build
  gradlew build
 
 ## base application
