@@ -1,7 +1,7 @@
 Android 通信 Proxy 設定ツール
 =============
 
-Language/[English](https://github.com/raise-isayan/TunProxy/blob/master/Readme.md)
+Language/[English](https://github.com/mooring/TunProxy/blob/master/Readme.md)
 
 このツールは、Android の VPNService 機能を利用した Proxy 設定ツールです。
 指定したアプリからの通信のみを取得することが可能です。
@@ -31,7 +31,7 @@ TunProxyアプリを起動すると以下の画面が起動します。
 
 VPNの接続設定を行います。
 
-![Menu Settings](images/Menu-Settings.png) ⇒ ![Menu Settings](images/Menu-Settings-app.png)
+![Menu Settings](images/Menu-Settings.png)
 
 Disallowed Application と Allowed Application の２つのモードがありますが、同時に指定することはできません。
 このためどちらのモードで動作させたいかを選択する必要があります。
