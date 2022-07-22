@@ -41,9 +41,6 @@ android {
             signingConfig signingConfigs.release
         }
     }
-    lintOptions {
-        abortOnError false
-    }
     externalNativeBuild {
         cmake {
             path file('CMakeLists.txt')
@@ -51,6 +48,9 @@ android {
     }
 
     ndkVersion = '22.1.7171670'
+    lint {
+        abortOnError false
+    }
 
     applicationVariants.all { variant ->
         if (variant.buildType.name.equals("release")) {
